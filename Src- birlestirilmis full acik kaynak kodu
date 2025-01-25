@@ -33,7 +33,8 @@ local a, b = {
                     {58, "ModuleScript", {"Luffy"}},
                     {59, "ModuleScript", {"Green"}},
                     {60, "ModuleScript", {"Black"}},
-					{61, "ModuleScript", {"Vynixu"}},
+				       	{61, "ModuleScript", {"Vynixu"}},
+				       	   {62, "ModuleScript", {"Squid"}},
                 }
             },
             {
@@ -5139,7 +5140,8 @@ local aa = {
                 "Luffy",
                 "Green",
                 "Black",
-				"Vynixu"
+				"Vynixu",
+				"Squid"
             }
         }
         for ag, ah in next, ab:GetChildren() do
@@ -5690,7 +5692,48 @@ local aa = {
 	DialogInputLine = Color3.fromRGB(120, 120, 120)
         }
     end
-}
+},
+
+[62] = function()
+    local c, U, a2, a3, a4 = b(59)
+    return {
+        Name = "Squid",
+        Accent = Color3.fromRGB(204, 0, 153), -- Pembe
+        AcrylicMain = Color3.fromRGB(20, 20, 20), -- Siyah
+        AcrylicBorder = Color3.fromRGB(40, 40, 40), -- Daha açık siyah ton
+        AcrylicGradient = ColorSequence.new(Color3.fromRGB(204, 0, 0), Color3.fromRGB(0, 102, 0)), -- Kırmızı ve yeşil geçişi
+        AcrylicNoise = 0.88,
+        TitleBarLine = Color3.fromRGB(204, 0, 0), -- Kırmızı
+        Tab = Color3.fromRGB(0, 102, 0), -- Yeşil
+        Element = Color3.fromRGB(204, 0, 153), -- Pembe
+        ElementBorder = Color3.fromRGB(102, 0, 102), -- Koyu pembe
+        InElementBorder = Color3.fromRGB(153, 51, 102), -- Pastel ton
+        ElementTransparency = 0.85,
+        ToggleSlider = Color3.fromRGB(204, 0, 0), -- Kırmızı
+        ToggleToggled = Color3.fromRGB(20, 20, 20), -- Siyah
+        SliderRail = Color3.fromRGB(0, 102, 0), -- Yeşil
+        DropdownFrame = Color3.fromRGB(204, 0, 153), -- Pembe
+        DropdownHolder = Color3.fromRGB(40, 40, 40), -- Daha açık siyah
+        DropdownBorder = Color3.fromRGB(102, 0, 102), -- Koyu pembe
+        DropdownOption = Color3.fromRGB(0, 102, 0), -- Yeşil
+        Keybind = Color3.fromRGB(204, 0, 0), -- Kırmızı
+        Input = Color3.fromRGB(204, 0, 153), -- Pembe
+        InputFocused = Color3.fromRGB(20, 20, 20), -- Siyah
+        InputIndicator = Color3.fromRGB(102, 0, 102), -- Koyu pembe
+        Dialog = Color3.fromRGB(204, 0, 153), -- Pembe
+        DialogHolder = Color3.fromRGB(40, 40, 40), -- Daha açık siyah
+        DialogHolderLine = Color3.fromRGB(20, 20, 20), -- Siyah
+        DialogButton = Color3.fromRGB(204, 0, 0), -- Kırmızı
+        DialogButtonBorder = Color3.fromRGB(40, 40, 40), -- Daha açık siyah
+        DialogBorder = Color3.fromRGB(20, 20, 20), -- Siyah
+        DialogInput = Color3.fromRGB(153, 0, 102), -- Pastel ton
+        DialogInputLine = Color3.fromRGB(204, 0, 153), -- Pembe
+        Text = Color3.fromRGB(240, 240, 240), -- Beyaz
+        SubText = Color3.fromRGB(200, 200, 200), -- Açık gri
+        Hover = Color3.fromRGB(204, 0, 153), -- Pembe
+        HoverChange = 0.05
+    }
+end
 do
     local ab, ac, ad, ae, af, ag, ah, aj, c, e, f, g, h, i, j, k =
         task,
